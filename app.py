@@ -19,7 +19,7 @@ st.markdown("""
                     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f5f7fa'/%3E%3Cpath d='M0 50 L100 50 M50 0 L50 100' stroke='%23c3cfe2' stroke-width='1' opacity='0.3'/%3E%3C/svg%3E");
         background-size: cover;
         background-attachment: fixed;
-        backdrop-filter: blur(15px); /* Efek blur */
+        backdrop-filter: blur(15px); 
         max-width: 1200px;
         margin: 0 auto;
         font-family: 'Inter', sans-serif;
@@ -28,7 +28,7 @@ st.markdown("""
     .header {
         text-align: center;
         padding: 2rem 0;
-        background: rgba(255, 255, 255, 0.7); /* Semi transparan */
+        background: rgba(255, 255, 255, 0.7); 
         border-radius: 15px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
         margin-bottom: 2rem;
@@ -36,12 +36,12 @@ st.markdown("""
     }
     
     .container-style {
-        background: rgba(255, 255, 255, 0.7); /* Semi transparan */
+        background: rgba(255, 255, 255, 0.7); 
         border-radius: 15px;
         padding: 1.5rem;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         margin-bottom: 2rem;
-        backdrop-filter: blur(5px); /* Efek blur */
+        backdrop-filter: blur(5px); 
     }
     
     .color-swatch {
