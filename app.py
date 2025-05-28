@@ -14,11 +14,12 @@ st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
     
-    .main {
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    }
-    
     .stApp {
+        background: linear-gradient(135deg, rgba(245, 247, 250, 0.8) 0%, rgba(195, 207, 226, 0.8) 100%), 
+                    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f5f7fa'/%3E%3Cpath d='M0 50 L100 50 M50 0 L50 100' stroke='%23c3cfe2' stroke-width='1' opacity='0.3'/%3E%3C/svg%3E");
+        background-size: cover;
+        background-attachment: fixed;
+        backdrop-filter: blur(15px); /* Efek blur */
         max-width: 1200px;
         margin: 0 auto;
         font-family: 'Inter', sans-serif;
@@ -27,29 +28,43 @@ st.markdown("""
     .header {
         text-align: center;
         padding: 2rem 0;
-        background: white;
+        background: rgba(255, 255, 255, 0.7); /* Semi transparan */
         border-radius: 15px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
         margin-bottom: 2rem;
+        backdrop-filter: blur(5px); /* Blur tambahan */
+    }
+    
+    .container-style {
+        background: rgba(255, 255, 255, 0.7); /* Semi transparan */
+        border-radius: 15px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        backdrop-filter: blur(5px); /* Efek blur */
     }
     
     .color-swatch {
-        transition: transform 0.3s ease;
+        transition: all 0.3s ease;
         cursor: pointer;
         border-radius: 10px;
         overflow: hidden;
         position: relative;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     
     .color-swatch:hover {
-        transform: translateY(-5px);
+        transform: translateY(-7px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     }
     
-    .full-width-preview {
-        margin: 2rem 0;
+    .image-preview-container {
+        background: rgba(255, 255, 255, 0.7);
         border-radius: 15px;
-        overflow: hidden;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        margin: 2rem 0;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
     }
 </style>
 """, unsafe_allow_html=True)
