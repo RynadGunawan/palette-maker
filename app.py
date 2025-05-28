@@ -8,8 +8,6 @@ Deskripsi   : Website yang dapat menghasilkan color picker berdasarkan warna dom
 import streamlit as st
 import numpy as np
 from PIL import Image
-import matplotlib.pyplot as plt
-import matplotlib.patches as patches
 
 # Custom CSS styling
 st.markdown("""
